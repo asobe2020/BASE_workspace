@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       .toppage-animation {
+            height: 600px;
+            width: 100%;
+            position: relative;
+       }
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            background-size: cover;
+            background-position: center center;
+            
+            animation: image-switch-animation 25s infinite;
+        }
+        .src1 {
+        background-image: url(https://github.com/asobe2020/BASE_workspace/blob/main/assets/photo-54-min.jpg?raw=true);
+        }
+        .src2 {
+        background-image: url(https://github.com/asobe2020/BASE_workspace/blob/main/assets/photo-37-min.jpg?raw=true);
+        }
+        .src3 {
+        background-image: url(https://github.com/asobe2020/BASE_workspace/blob/main/assets/photo-317-min.jpg?raw=true);
+        }
+        .src4 {
+        background-image: url(https://github.com/asobe2020/BASE_workspace/blob/main/assets/photo-303-min.jpg?raw=true);
+        }
+        .src5 {
+        background-image: url(https://github.com/asobe2020/BASE_workspace/blob/main/assets/photo-299-min.jpg?raw=true);
+        }
+
+        @keyframes image-switch-animation {
+            0%{ opacity: 0;}
+            5%{ opacity: 1;}
+            25%{ opacity: 1;}
+            30%{ opacity: 0;}
+            100%{ opacity: 0;}
+        }
+
+        .image:nth-of-type(1) {
+        animation-delay: 0s;
+        }
+        .image:nth-of-type(2) {
+        animation-delay: 5s;
+        }
+        .image:nth-of-type(3) {
+        animation-delay: 10s;
+        }
+        .image:nth-of-type(4) {
+        animation-delay: 15s;
+        }
+        .image:nth-of-type(5) {
+        animation-delay: 20s;
+        }
+        
+
+    </style>
+            <div class="toppage-animation">
+                <div class="image src1"></div>
+                <div class="image src2"></div>
+                <div class="image src3"></div>
+                <div class="image src4"></div>
+                <div class="image src5"></div>
+            </div>
+</body>
+</html>
